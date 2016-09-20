@@ -25,3 +25,4 @@ Route::get('didihavetorestart', function () {
 #https://laravel.com/docs/5.3/controllers#resource-controllers
 */
 Route::resource('meal','MealController');
+Route::resource('etsy','EtsyController');

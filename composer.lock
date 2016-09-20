@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9b650b67c818af9d1e075ef524c0e43",
-    "content-hash": "129e0744745526bd1b04471a256dca3a",
+    "hash": "59056122da727a4f4768b97cbef9d82a",
+    "content-hash": "637562fd5b985a7ce5aa4930651cfdc5",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -310,6 +310,57 @@
             "time": "2016-03-04 21:34:41"
         },
         {
+            "name": "jenssegers/oauth",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/laravel-oauth.git",
+                "reference": "cc0026f7f5147feeb3ef6c62cf1d834604324ab2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/laravel-oauth/zipball/cc0026f7f5147feeb3ef6c62cf1d834604324ab2",
+                "reference": "cc0026f7f5147feeb3ef6c62cf1d834604324ab2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "4.*|5.*",
+                "lusitanian/oauth": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "*",
+                "orchestra/testbench": "3.0.*",
+                "satooshi/php-coveralls": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\OAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hannes Van De Vreken",
+                    "homepage": "http://hannesv.be"
+                },
+                {
+                    "name": "Jens Segers",
+                    "homepage": "http://jenssegers.be"
+                }
+            ],
+            "description": "Laravel OAuth library based on Lusitanian/PHPoAuthLib",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "time": "2015-05-01 08:13:58"
+        },
+        {
             "name": "jeremeamia/SuperClosure",
             "version": "2.2.0",
             "source": {
@@ -578,6 +629,73 @@
                 "storage"
             ],
             "time": "2016-04-28 06:53:12"
+        },
+        {
+            "name": "lusitanian/oauth",
+            "version": "v0.8.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lusitanian/PHPoAuthLib.git",
+                "reference": "29bda6e176df6c292a9b1c43ae8a44d56a87c30b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/29bda6e176df6c292a9b1c43ae8a44d56a87c30b",
+                "reference": "29bda6e176df6c292a9b1c43ae8a44d56a87c30b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "predis/predis": "0.8.*@dev",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/http-foundation": "~2.1"
+            },
+            "suggest": {
+                "ext-openssl": "Allows for usage of secure connections with the stream-based HTTP client.",
+                "predis/predis": "Allows using the Redis storage backend.",
+                "symfony/http-foundation": "Allows using the Symfony Session storage backend."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OAuth": "src",
+                    "OAuth\\Unit": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Desberg",
+                    "email": "david@daviddesberg.com"
+                },
+                {
+                    "name": "Elliot Chance",
+                    "email": "elliotchance@gmail.com"
+                },
+                {
+                    "name": "Pieter Hordijk",
+                    "email": "info@pieterhordijk.com"
+                }
+            ],
+            "description": "PHP 5.3+ oAuth 1/2 Library",
+            "keywords": [
+                "Authentication",
+                "authorization",
+                "oauth",
+                "security"
+            ],
+            "time": "2016-02-24 00:20:18"
         },
         {
             "name": "mongodb/mongodb",
@@ -853,6 +971,48 @@
                 "php"
             ],
             "time": "2016-04-19 13:41:41"
+        },
+        {
+            "name": "ohmy/auth",
+            "version": "0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sudocode/ohmy-auth.git",
+                "reference": "508dfb5ee45f3827330f0627c599807f92ee0324"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sudocode/ohmy-auth/zipball/508dfb5ee45f3827330f0627c599807f92ee0324",
+                "reference": "508dfb5ee45f3827330f0627c599807f92ee0324",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ohmy": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Park",
+                    "email": "sudocoder@ymail.com",
+                    "homepage": "http://sudoco.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth so easy.. you won't even believe it's OAuth",
+            "homepage": "https://github.com/sudocode/ohmy-auth",
+            "keywords": [
+                "oauth"
+            ],
+            "time": "2014-04-13 06:34:13"
         },
         {
             "name": "paragonie/random_compat",

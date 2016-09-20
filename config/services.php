@@ -34,5 +34,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'etsy' => [
+        'client_id'     => 'ry2qdxt3vmbtbm4ifcxxhpci',
+        'client_secret' => '9acefgi98s',
+        'scope'         => [],
+    ]
 
 ];
